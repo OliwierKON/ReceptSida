@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+html{
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+    font-family: "Asap", sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(59, 59, 58)
+}
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: rgb(36, 34, 34);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(218, 175, 23);
+}
+.button{
+    border: 3px;
+    border-radius: 15px;
+    width: 125px;
+    height: 35px;
+    color: rgb(36, 34, 34);
+    background-color: rgb(218, 175, 23);
+    transition-duration: 0.4s;
+}
+.button:hover{
+    background-color: rgb(158, 129, 27);
+    color: rgb(255, 255, 255)
+}
+.main{
+   
+    color: rgb(218, 175, 23);
+
+}
+    .desc{
+        height: 55%;
+    }
+.pannkaka{
+    height: 55%;
+    border: 5px solid rgb(36, 34, 34);
+    border-radius: 100px;
+}   
+
+.grid1 {
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 2%; 
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 300px;
+}
+.grid2{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    
+}
+.ingredienser{
+  display: flex;
+  flex-direction: column;
+    outline: 5px solid rgb(36, 34, 34);
+    border-radius: 10px;
+    margin-right: 3%;
+    margin-left: 1%;
+    justify-content: space-around;
+}
+.instruction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(218, 175, 23);
+}
+.contact{
+    display: inline-block;
+    position: relative;
+    color: rgb(218, 175, 23);
+}
+.contact:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(218, 175, 23);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.contact:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+a{
+    text-decoration: none;
+    color: rgb(218, 175, 23);
+  }
